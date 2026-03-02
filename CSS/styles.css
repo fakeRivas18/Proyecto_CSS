@@ -2,14 +2,74 @@ body{
     background-color: #212738;
     font-family: "arial narrow", sans-serif;
     color: white;
+    margin: 20px;
 }
+
+*{
+    font-family: "arial narrow", sans-serif;
+}
+
 
 h1{
     color: #fa564d;
     font-size: 24px;
-    font-weight: bold;
-    text-align: center; 
+    text-align: center;
+    font-family: "IMPACT", sans-serif; 
 }
+
+form{
+    text-align: center;
+}
+
+
+input{
+    width: 300px;
+    padding: 7px;
+    font: 12px;
+    border: 2px solid;
+    border-radius: 15px;
+    border-color: lightgray;
+}
+
+input:focus{
+    border: 4px solid  #D1D646 ;
+    border-color: #D1D646;
+}
+
+
+
+
+button{
+    text-align: center;
+    width: 200px;
+    padding: 7px;
+    border: 2px solid whitesmoke;
+    border-radius: 15px;
+}
+
+#loginButton{
+    background-color: rgb(59, 71, 240);
+    color: white;
+}
+
+#loginButton:hover{
+    background-color: rgb(59, 24, 255);
+    color: white;
+    border: 2px whitesmoke;
+}
+
+#forgotButton{
+    background-color: #212738;
+    color: #D1D646;
+    border: 0px;
+}
+
+#forgotButton:hover{
+    background-color: #323b53;
+    color: #D1D646;
+    border: 0px;
+}
+
 
 
 footer{

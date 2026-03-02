@@ -1,6 +1,24 @@
 body{
-    background-color: cyan;
-    font-family: arial narrow;
+    background-color: #212738;
+    font-family: "arial narrow", sans-serif;
+    color: white;
+}
+
+strong{
+    color: #F97068; 
 }
 
 
+footer{
+    background-color: #227C9D;
+    font-size: 12px;
+    text-align: center  ;
+    padding: 10px;
+}
+
+
+/* Cambia los colores de seleccion de texto de la página*/
+::selection{
+background: #D1D646;
+color: black;
+}

@@ -4,13 +4,16 @@ body{
     color: white;
 }
 
-strong{
-    color: #F97068; 
+h1{
+    color: #fa564d;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center; 
 }
 
 
 footer{
-    background-color: #227C9D;
+    background-color: #808080;
     font-size: 12px;
     text-align: center  ;
     padding: 10px;

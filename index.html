@@ -11,6 +11,26 @@
     <!-- FORMA 1 DE CREAR ESTILOS CON CSS -->
     <link rel="stylesheet" href="CSS/styles.css">
     
+    <!-- Crea las propiedades que heredan todos por defecto todos los elementos de la página -->
+    <style>
+        body{
+            background-color: #212738;
+            font-family: "arial narrow", sans-serif;
+            color: white;
+            margin: 20px;
+        }
+
+        /*Establece de forma predeterminada el tipo de fuente de la página */
+        *{
+            font-family: "arial narrow", sans-serif;
+        }
+
+        /* Cambia los colores de seleccion de texto de la página*/
+        ::selection{
+        background: #D1D646;    /*Cambia de color el fondo del texto seleccionado*/
+        color: black;           /*Cambia de color el texto al hacer la selección*/
+        }
+    </style>
 
 </head>
 <body>
@@ -36,7 +56,7 @@
 
     <hr>
     <footer>
-        All rights reserved
+        All rights reserved.
     </footer>
 </body>
 

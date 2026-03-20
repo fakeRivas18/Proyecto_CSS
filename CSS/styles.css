@@ -104,5 +104,32 @@ footer{
 
 
 
+/* Responsive Escritorio */
+@media (max-width: 1024px) {
+    .imageContainer img{
+        display: none;
+    }
+
+    .loginContainer{
+        align-content: center;
+        justify-content: center;
+    }
+}
+
+/* Responsive Movil */
+@media (max-width: 768px) {
+    .imageContainer img{
+        display: none;              /* Desaparace el contenido del contenedor*/
+    }
+
+    .loginContainer{
+        align-content: center;      /*Centra el contenido del Contenedor*/
+        justify-content: center;
+    }
+
+    .loginContainer img{
+        visibility: visible;        /* Aparece la imagen del logo de facebook cuando está en modo movil*/
+    }
+}
 
 

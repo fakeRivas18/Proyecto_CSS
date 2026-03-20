@@ -4,10 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Facebook-Lite</title>
+    
     <link rel="stylesheet" href="./CSS/stylesMP.css">   <!-- linkeo de archivo de CSS para main page -->
+    
+    <!-- AGREGA ICONO DE LA PÁGINA (PESTAÑA) -->
+    <link rel="icon" href="./img/icon.ico" type="image/x-icon">
 </head>
 
 <body>
-    <p>ola ke ase de nuevo</p>
+
+    <header>
+        <div class="menuContainer">
+            <div class="logoContainer">
+                <img src="./img/facebookLogo.png" alt="logoFacebook">
+                <input type="text" name="search" id="search" placeholder="Buscar en Facebook-Lite">
+            </div>
+            <div class="navContainer">
+                <a href="mainPage.html" aria-label="Inicio" class="navButton"><img src="img/navMenu/inicio.png" alt="Inicio"></a>
+                <a href="friendsPage.html" aria-label="Amigos" class="navButton"><img src="img/navMenu/amigos.png" alt="Amigos"></a>
+                <a href="watchPage.html" aria-label="Reels" class="navButton"><img src="img/navMenu/reels.png" alt="Reels"></a>
+                <a href="marketplacePage.html" aria-label="Marketplace" class="navButton"><img src="img/navMenu/market.png" alt="Marketplace"></a>
+                <a href="groupsPage.html" aria-label="Grupos" class="navButton"><img src="img/navMenu/grupos.png" alt="Grupos"></a>
+            </div>
+            <div class="profileContainer">
+                <img src="./img/profilePic.jpg" alt="profilePicture">
+                <a href="profilePage.html" id="profileName">Oscar Rivas</a>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+        <div class="mainContainer">
+            <div class="leftContainer">
+
+            </div>
+            <div class="contentContainer">
+
+            </div>
+            <div class="rightContainer">
+
+            </div>
+        </div>
+    </main>
+    
+    <div class="cookiesBanner">
+        <p>Utilizamos cookies para mejorar tu experiencia en nuestro sitio web. Al continuar navegando, aceptas el uso de cookies. <a href="https://homers-webpage.vercel.app/" target="_blank"> Más información </a></p>
+        <button id="acceptButton">Aceptar</button>
+        <a href="https://www.google.com/">
+            <button id="rejectButton">Rechazar</button>
+        </a>
+    </div>
 </body>
 </html>

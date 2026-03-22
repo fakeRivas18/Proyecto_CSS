@@ -1,36 +1,86 @@
 /* Estilos para la página principal de Facebook-Lite */
+:root {
+    --Facebook-Blue: #1877F2; /* Azul característico de Facebook */
+    --primary-color: #FFFFFF; /* Blanco para fondos y elementos principales */
+    --secondary-color: #F2F4F7; /* Gris claro para fondos y bordes */
+    --hover-color: #d5d6d6; /* Color para hover en botones y enlaces */
+    --text-color: #050505; /* Color de texto oscuro */
+    --cookies-banner-bg: #e7e7e7; /* Fondo del banner de cookies */
+}
 
 *{
     font-family: 'helvetica', sans-serif;
-    color: black;
-    font-size: 16px;
+    color: var(--text-color)
+    font-size: 14px;
 }
 
 body{
-    background-color: #F2F4F7;
+    background-color: var(--secondary-color);
 }
 
 
+/* Banner de cookies */
+.cookiesBanner {
+    display: flex;
+    position: fixed;
+    align-items: center;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--cookies-banner-bg);
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 2000; /* Alto valor para estar encima de todo */
+    border-radius: 20px;
+}
+
+#acceptButton {
+    border: none;
+    width: 100px;
+    height: 40px;
+    margin-left: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+#acceptButton:hover {
+    background-color: var(--Facebook-Blue);
+}
+
+#rejectButton {
+    border: none;
+    width: 100px;
+    height: 40px;
+    margin-left: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#rejectButton:hover {
+    background-color: #f44336;
+}
 
 
-/* Estilos para el menú de navegación */
+/* ***[Estilos para la barra de navegación]*** */
 .menuContainer{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    justify-items: center;
     height: 5vh;
     border: black solid 1px;
     background-color: white;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
 }
 
+
+/* ***Estilos para el logo y la barra de búsqueda*** */
 .logoContainer{
+    display: flex;
     min-width: 33%;
-    display: flex
-    flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     height: 5vh;
     border: black solid 1px;
@@ -39,21 +89,39 @@ body{
 }
 
 .logoContainer img{
+    display: flex;
+    flex-direction: column;
     width: 40px;
     height: 40px;
-    text-align: center;
+    text-align: left;
+    margin: 2px;
 }
 
 .logoContainer input{
-    width: 200px;
+    align-self: center;
+    width: 250px;
     padding: 7px;
     font: 12px;
     border: 2px solid;
-    border-radius: 15px;
+    border-radius: 12px;
+    background-color: var(--secondary-color);
     border-color: lightgray;
-    margin-left: 20px;
+    margin-top: 2px;
 }
 
+/* Cambia el borde del input al hacer focus */
+input:focus{
+    outline: none;
+    border-color: var(--Facebook-Blue);
+}
+
+/* Elimina el texto del placeholder al hacer focus en el input */
+input:focus::placeholder {
+    color: transparent;
+}
+
+
+/* ***Estilos para los botones de navegación*** */
 .navContainer{
     position: relative;
     min-width: 33%;
@@ -77,9 +145,11 @@ body{
 }
 
 .navButton:hover{
-    background-color: lightgray;
+    background-color: var(--hover-color);
 }
 
+
+/* ***Estilos para el perfil del usuario*** */
 .profileContainer{
     min-width: 33%;
     display: flex;
@@ -104,8 +174,7 @@ body{
 }
 
 
-
-/* Estilos para la página principal */
+/* ***[Estilos para la página principal]*** */
 .mainContainer{
     display: flex;
     position: relative;
@@ -119,6 +188,7 @@ body{
     border: black solid 1px;
 }
 
+/* ***Estilos para el contenedor de la Derecha*** */
 .rightContainer{
     display: flex;
     flex-wrap: wrap;
@@ -130,6 +200,7 @@ body{
     border: black solid 1px;
 }
 
+/* ***Estilos para el contenedor del centro*** */
 .contentContainer{
      display: flex;
     flex-wrap: wrap;
@@ -141,6 +212,7 @@ body{
     border: black solid 1px;
 }
 
+/* ***Estilos para el contenedor de la Izquierda*** */
 .leftContainer{
     display: flex;
     flex-wrap: wrap;
@@ -157,45 +229,18 @@ body{
 
 
 
+/* ***Responsive Movil*** */
+@media (max-width: 768px) {
+    .imageContainer img{
+        display: none;              /* Desaparace el contenido del contenedor*/
+    }
 
+    .loginContainer{
+        align-content: center;      /*Centra el contenido del Contenedor*/
+        justify-content: center;
+    }
 
-
-
-
-
-/* Banner de cookies */
-.cookiesBanner {
-    display: flex;
-    position: fixed;
-    top: 90%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #fff;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    z-index: 2000; /* Alto valor para estar encima de todo */
-    border-radius: 20px;
-}
-
-#acceptButton {
-    border: none;
-    padding: 20px 20px;
-    margin-left: 20px;
-    cursor: pointer;
-
-}
-
-#acceptButton:hover {
-    background-color: #45a049;
-}
-
-#rejectButton {
-    border: none;
-    padding: 20px 20px;
-    margin-left: 20px;
-    cursor: pointer;
-}
-
-#rejectButton:hover {
-    background-color: #f44336;
+    .loginContainer img{
+        visibility: visible;        /* Aparece la imagen del logo de facebook cuando está en modo movil*/
+    }
 }

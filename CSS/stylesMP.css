@@ -5,8 +5,21 @@
     --secondary-color: #F2F4F7; /* Gris claro para fondos y bordes */
     --hover-color: #d5d6d6; /* Color para hover en botones y enlaces */
     --text-color: #050505; /* Color de texto oscuro */
+    --h3-text-color: #474747; /* Color de texto para títulos h3 */
     --cookies-banner-bg: #e7e7e7; /* Fondo del banner de cookies */
+    --publicity-banner-border-image: #a3a3a3; /* borde de Imagen para el banner de publicidad */
+    --add-url-text-color: #b9b9b9; /* Color del texto para el botón de agregar URL en publicaciones */
 }
+
+.dark-mode {
+    --primary-color: #18191A; /* Fondo oscuro para modo oscuro */
+    --secondary-color: #242526; /* Fondo secundario oscuro */
+    --hover-color: #3A3B3C; /* Color de hover para modo oscuro */
+    --text-color: #E4E6EB; /* Texto claro para modo oscuro */
+    --h3-text-color: #B0B3B8; /* Color de texto para títulos h3 en modo oscuro */
+    --cookies-banner-bg: #e7e7e7; /* Fondo del banner de cookies en modo oscuro */
+}
+
 
 *{
     font-family: 'helvetica', sans-serif;
@@ -18,6 +31,10 @@ body{
     background-color: var(--secondary-color);
 }
 
+h3{
+    color: var(--h3-text-color);
+    margin-left: 10px;
+}
 
 /* Banner de cookies */
 .cookiesBanner {
@@ -61,7 +78,7 @@ body{
     background-color: #f44336;
 }
 
-
+/* PARTE SUPERIOR (BARRA DE NAVEGACIÓN) */
 /* ***[Estilos para la barra de navegación]*** */
 .menuContainer{
     display: flex;
@@ -70,7 +87,7 @@ body{
     justify-content: center;
     justify-items: center;
     height: 5vh;
-    border: black solid 1px;
+
     background-color: white;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
 }
@@ -83,7 +100,7 @@ body{
     justify-content: space-around;
     align-items: center;
     height: 5vh;
-    border: black solid 1px;
+
     text-align: center;
     
 }
@@ -95,6 +112,10 @@ body{
     height: 40px;
     text-align: left;
     margin: 2px;
+}
+
+#logoFacebook:hover{
+    cursor: pointer;
 }
 
 .logoContainer input{
@@ -131,7 +152,7 @@ input:focus::placeholder {
     justify-items: center;
     justify-content: space-evenly;
     height: 5vh;
-    border: black solid 1px;
+
     text-align: center;
 }
 
@@ -157,7 +178,7 @@ input:focus::placeholder {
     align-items: center;
     justify-content: right;
     height: 5vh;
-    border: black solid 1px;
+
 }
 
 .profileContainer img{
@@ -173,7 +194,6 @@ input:focus::placeholder {
     margin-right: 20px;
 }
 
-
 /* ***[Estilos para la página principal]*** */
 .mainContainer{
     display: flex;
@@ -185,21 +205,52 @@ input:focus::placeholder {
     align-items: center;
     min-width: 100%;
     height: 95vh;
-    border: black solid 1px;
+
 }
 
-/* ***Estilos para el contenedor de la Derecha*** */
-.rightContainer{
+/* SECCIÓN IZQUIERDA */
+/* ***Estilos para el contenedor de la Izquierda*** */
+.leftContainer{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: stretch;
     min-width: 25%;
     height: 95vh;
-    border: black solid 1px;
+
 }
 
+.subMenuButton{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    width: 100%;
+    padding: 0px;
+    border-radius: 7px;
+    text-decoration: none;
+}
+
+.subMenuButton:hover{
+    background-color: var(--hover-color);
+}
+
+.subMenuButton img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+    text-align: left;
+    margin-right: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+
+
+/* SECCIÓN CENTRAL */
 /* ***Estilos para el contenedor del centro*** */
 .contentContainer{
      display: flex;
@@ -209,19 +260,88 @@ input:focus::placeholder {
     align-items: center;
     min-width: 50%;
     height: 95vh;
-    border: black solid 1px;
+
 }
 
-/* ***Estilos para el contenedor de la Izquierda*** */
-.leftContainer{
+
+
+/* SECCIÓN DERECHA */
+/* ***Estilos para el contenedor de la Derecha*** */
+.rightContainer{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     min-width: 25%;
     height: 95vh;
-    border: black solid 1px;
+
+}
+
+/* PUBLICIDAD */
+.publicityContainer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: stretch;
+    align-items: flex-start;
+    width: 100%;
+
+}
+
+.adContainer{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 180px;
+
+    text-decoration: none;
+
+}
+
+.adImage{
+    display: flex;
+    align-items: center;
+    width: 40%;
+    height: 100%;
+
+    text-decoration: none;
+}
+
+.adImage img{
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.adInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* centra verticalmente */
+    width: 60%;
+    height: 100%;
+
+    margin: 10px;
+}
+
+.adInfo p{
+    text-decoration: none;
+    color: var(--add-url-text-color);
+}
+
+/* CONTACTOS */
+.contactsContainer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: flex-start;
+    width: 100%;
+    height: 50%;
+
 }
 
 

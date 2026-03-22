@@ -16,15 +16,17 @@
     <header>
         <div class="menuContainer">
             <div class="logoContainer">
-                <img src="./img/facebookLogo.png" alt="logoFacebook">
+                <a href="mainPage.html">
+                    <img src="./img/facebookLogo.png" alt="logoFacebook" id="logoFacebook">
+                </a>
                 <input type="text" name="search" id="search" placeholder="Buscar en Facebook-Lite">
             </div>
             <div class="navContainer">
-                <a href="mainPage.html" aria-label="Inicio" class="navButton"><img src="img/navMenu/inicio.png" alt="Inicio"></a>
-                <a href="friendsPage.html" aria-label="Amigos" class="navButton"><img src="img/navMenu/amigos.png" alt="Amigos"></a>
-                <a href="watchPage.html" aria-label="Reels" class="navButton"><img src="img/navMenu/reels.png" alt="Reels"></a>
-                <a href="marketplacePage.html" aria-label="Marketplace" class="navButton"><img src="img/navMenu/market.png" alt="Marketplace"></a>
-                <a href="groupsPage.html" aria-label="Grupos" class="navButton"><img src="img/navMenu/grupos.png" alt="Grupos"></a>
+                <a href="mainPage.html" aria-label="Inicio" class="navButton"><img src="./img/navMenu/inicio.png" alt="Inicio"></a>
+                <a href="friendsPage.html" aria-label="Amigos" class="navButton"><img src="./img/navMenu/amigos.png" alt="Amigos"></a>
+                <a href="watchPage.html" aria-label="Reels" class="navButton"><img src="./img/navMenu/reels.png" alt="Reels"></a>
+                <a href="marketplacePage.html" aria-label="Marketplace" class="navButton"><img src="./img/navMenu/market.png" alt="Marketplace"></a>
+                <a href="groupsPage.html" aria-label="Grupos" class="navButton"><img src="./img/navMenu/grupos.png" alt="Grupos"></a>
             </div>
             <div class="profileContainer">
                 <img src="./img/profilePic.jpg" alt="profilePicture">
@@ -36,14 +38,135 @@
 
     <main>
         <div class="mainContainer">
+            
+            <!-- SECCIÓN IZQUIERDA -->
             <div class="leftContainer">
 
+                <!--SECCIÓN SUBMENU IZQUIERDA-->
+                <div class="subMenuContainer"></div>
+                    <nav>
+                        <a href=""></a>
+                        <a href="profilePage.html" class="subMenuButton" aria-label="Perfil">
+                            <img src="./img/profilePic.jpg" alt="Perfil">
+                            <p>Oscar Rivas</p>
+                        </a>
+                        <a href="friendsPage.html" class="subMenuButton" aria-label="Amigos">
+                            <img src="./img/leftMenu/amigosIcon.png" alt="Amigos">
+                            <p>Amigos</p>
+                        </a>
+                        <a href="savedPage.html" class="subMenuButton" aria-label="Guardados">
+                            <img src="./img/leftMenu/savedIcon.png" alt="Guardados">
+                            <p>Guardados</p>
+                        </a>
+                        <a href="memories.html" class="subMenuButton" aria-label="Recuerdos">
+                            <img src="./img/leftMenu/memoriesIcon.png" alt="Recuerdos">
+                            <p>Recuerdos</p>
+                        </a>
+                        <a href="groupsPage.html" class="subMenuButton" aria-label="Grupos">
+                            <img src="./img/leftMenu/groupsIcon.png" alt="Grupos">
+                            <p>Grupos</p>
+                        </a>
+                        <a href="reels.html" class="subMenuButton" aria-label="Reels">
+                            <img src="./img/leftMenu/reelsIcon.png" alt="Reels">
+                            <p>Reels</p>
+                        </a>
+                        <a href="marketplacePage.html" class="subMenuButton" aria-label="Marketplace">
+                            <img src="./img/leftMenu/marketplaceIcon.png" alt="Marketplace">
+                            <p>Marketplace</p>
+                        </a>
+                        <a href="feeds.html" class="subMenuButton" aria-label="Feeds">
+                            <img src="./img/leftMenu/feedsIcon.png" alt="Feeds">
+                            <p>Feeds</p>
+                        </a>
+                        <a href="events.html" class="subMenuButton" aria-label="Eventos">
+                            <img src="./img/leftMenu/eventsIcon.png" alt="Eventos">
+                            <p>Eventos</p>
+                        </a>
+                        <br>
+                        <hr>
+                        <br>
+                    </nav>
+
+
+                
+                <!--SECCIÓN DE ACCESOS DIRECTOS-->
+                <div class="shortcutsContainer">
+                    <h3>Accesos directos</h3>
+                    <a href="https://www.youtube.com/" class="subMenuButton">
+                        <img src="./img/shortcuts/youtubeIcon.png" alt="YouTube">
+                        <p>YouTube</p>
+                    </a>
+                    <a href="https://www.instagram.com/" class="subMenuButton">
+                        <img src="./img/shortcuts/instagramIcon.png" alt="Instagram">
+                        <p>Instagram</p>
+                    </a>
+                    <a href="https://www.twitter.com/" class="subMenuButton">
+                        <img src="./img/shortcuts/twitterIcon.png" alt="Twitter">
+                        <p>Twitter</p>
+                    </a>
+                </div>
             </div>
+
+            <!-- SECCIÓN CENTRAL -->
             <div class="contentContainer">
 
             </div>
-            <div class="rightContainer">
 
+            <!-- SECCIÓN DERECHA -->
+            <div class="rightContainer">
+                
+                <!-- SECCION PUBLICIDAD -->
+                <div class="publictyContainer">
+                    <h3>Publicidad</h3>
+                    <a href="https://gbm.com" class="adBanner">
+                        <div class="adContainer">
+                            <div class="adImage">
+                                <img src="./img/ads/ads1.png" alt="Publicidad 1">
+                            </div>
+                            <div class="adInfo">
+                                <h4>Publicidad 1</h4>
+                                <p>URL 1</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="https://www.facebook.com/adsmanager" class="adBanner">
+                        <div class="adContainer">
+                            <div class="adImage">
+                                <img src="./img/ads/ads2.png" alt="Publicidad 2">
+                            </div>
+                            <div class="adInfo">
+                                <h4>Publicidad 2</h4>
+                                <p>URL 2</p>
+                            </div>
+                        </div>
+                    </a>
+                    <br>
+                    <hr>
+                    <br>
+                </div>
+
+                
+                <!--SECCIÓN DE CONTACTOS-->
+                <div class="contactsContainer">
+                    <h3>Contactos</h3>
+                    <a href="https://www.facebook.com/" class="subMenuButton">
+                        <img src="./img/contacts/contact1.jpg" alt="Contacto 1">
+                        <p>Contacto 1</p>
+                    </a>
+                    <a href="https://www.facebook.com/" class="subMenuButton">
+                        <img src="./img/contacts/contact2.jpg" alt="Contacto 2">
+                        <p>Contacto 2</p>
+                    </a>
+                    <a href="https://www.facebook.com/" class="subMenuButton">
+                        <img src="./img/contacts/contact3.jpg" alt="Contacto 3">
+                        <p>Contacto 3</p>
+                    </a>
+                    <a href="https://www.facebook.com/" class="subMenuButton">
+                        <img src="./img/contacts/contact4.jpg" alt="Contacto 4">
+                        <p>Contacto 4</p>
+                    </a>
+                </div>
             </div>
         </div>
     </main>

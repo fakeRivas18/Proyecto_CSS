@@ -7,8 +7,8 @@
 
 ### ESCRITORIO 🖥️
 
-<img src="./EVIDENCIAS/EVIDENCIA 1.png" alt="EVIDENCIA 1" width="500">
-<img src="./EVIDENCIAS/EVIDENCIA 2.png" alt="EVIDENCIA 2" width="500">
+<img src="./EVIDENCIAS/EVIDENCIA 1.png" alt="EVIDENCIA 1" height="1000">
+<img src="./EVIDENCIAS/EVIDENCIA 2.png" alt="EVIDENCIA 2" height="1000">
 
 ### MÓVIL 📱 
 

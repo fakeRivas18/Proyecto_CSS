@@ -214,7 +214,7 @@ input:focus::placeholder {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 1024px;
+    max-width: 1280px;
     height: 95vh;
 
 }
@@ -383,8 +383,8 @@ input:focus::placeholder {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 35%;
-    height: 35%;
+    width: 30%;
+    height: 300px;
     z-index: 2;
 }
 
